@@ -1,0 +1,47 @@
+.confirmation-page { background: var(--bg); }
+.confirmation-inner { max-width: 680px; margin: 0 auto; }
+
+.checkout-steps {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 28px; font-size: 13px; color: var(--muted);
+}
+.step { padding: 4px 12px; border-radius: 99px; font-weight: 600; border: 1.5px solid var(--border); }
+.step.active { background: var(--success); color: #fff; border-color: var(--success); }
+.step-sep { color: var(--border); }
+
+.confirmation-card { padding: 40px; text-align: center; }
+.conf-success-icon { font-size: 64px; margin-bottom: 16px; }
+.confirmation-card h1 { font-size: 30px; font-weight: 900; color: var(--success); }
+.conf-subtitle { color: var(--muted); margin-top: 8px; font-size: 15px; }
+
+.conf-order-meta {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  margin: 28px 0; text-align: left;
+  background: var(--bg); border-radius: var(--radius); padding: 20px;
+}
+.conf-meta-item { display: flex; flex-direction: column; gap: 4px; }
+.conf-meta-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.conf-meta-val   { font-size: 15px; font-weight: 700; }
+.conf-total { color: var(--brand); font-size: 20px; }
+
+.conf-items { text-align: left; margin-bottom: 24px; }
+.conf-items h3 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.conf-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.conf-item-img { width: 48px; height: 60px; background: #f1f5f9; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.conf-item-img img { width: 100%; height: 100%; object-fit: cover; }
+.conf-item-info { flex: 1; min-width: 0; }
+.conf-item-title { font-size: 14px; font-weight: 700; color: var(--text); display: block; }
+.conf-item-title:hover { color: var(--brand-light); }
+.conf-item-meta { font-size: 12px; color: var(--muted); display: block; margin-top: 2px; }
+.conf-item-sub  { font-size: 15px; font-weight: 800; color: var(--brand); white-space: nowrap; }
+
+.conf-address { text-align: left; background: var(--bg); padding: 16px; border-radius: var(--radius); margin-bottom: 20px; }
+.conf-address h3 { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+.conf-address p  { font-size: 13px; color: var(--muted); line-height: 1.8; }
+
+.conf-points { font-size: 13px; color: var(--success); margin-bottom: 16px; }
+
+.conf-actions { display: flex; gap: 12px; justify-content: center; margin-top: 28px; flex-wrap: wrap; }
+
+.conf-cancel-note { text-align: center; margin-top: 20px; font-size: 13px; color: var(--muted); }
+.conf-cancel-note a { color: var(--brand-light); font-weight: 600; }

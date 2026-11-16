@@ -1,0 +1,55 @@
+﻿# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build and Output directories
+dist/
+build/
+target/
+*.class
+
+# Testing & Coverage
+coverage/
+reports/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Vite / bundler caches
+.vite/
+.eslintcache
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and Local config
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Tooling / AI assistant cache
+.bob/

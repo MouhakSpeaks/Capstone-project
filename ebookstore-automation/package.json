@@ -1,0 +1,17 @@
+{
+  "name": "ebookstore-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Playwright UI automation tests for the BookHaven e-bookstore (ebookstore + ebookstore-ui)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report reports/html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

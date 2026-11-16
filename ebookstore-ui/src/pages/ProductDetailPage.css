@@ -1,0 +1,50 @@
+.product-detail-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 56px;
+}
+@media (max-width: 768px) {
+  .product-detail-layout { grid-template-columns: 1fr; }
+}
+
+.product-detail-img-wrap {
+  position: sticky; top: 80px;
+  padding: 12px; overflow: hidden;
+}
+.product-detail-img {
+  width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 6px;
+}
+.product-detail-img-placeholder {
+  aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center;
+  font-size: 90px; background: #f1f5f9; border-radius: 6px;
+}
+
+.product-detail-info { display: flex; flex-direction: column; gap: 12px; }
+.product-detail-title { font-size: 30px; font-weight: 800; color: var(--text); line-height: 1.2; }
+.product-detail-author { font-size: 15px; color: var(--muted); }
+.product-detail-author strong { color: var(--brand-light); }
+.product-detail-brand  { font-size: 13px; color: var(--muted); }
+.product-detail-rating { display: flex; align-items: center; gap: 8px; }
+.product-detail-price  { font-size: 36px; font-weight: 900; color: var(--brand); }
+.product-detail-delivery { font-size: 13px; color: var(--success); background: #f0fdf4; padding: 8px 12px; border-radius: 6px; }
+
+.product-detail-actions {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.qty-control { display: flex; align-items: center; gap: 0; border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.qty-btn { background: var(--bg); border: none; width: 36px; height: 40px; font-size: 18px; cursor: pointer; }
+.qty-btn:hover { background: var(--border); }
+.qty-val { width: 40px; text-align: center; font-size: 15px; font-weight: 700; }
+
+.product-detail-desc { padding-top: 8px; }
+.product-detail-desc h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.product-detail-desc p  { font-size: 14px; color: var(--muted); line-height: 1.8; }
+
+.product-detail-meta { border-collapse: collapse; font-size: 13px; }
+.product-detail-meta th { text-align: left; color: var(--muted); padding: 4px 24px 4px 0; font-weight: 600; white-space: nowrap; }
+.product-detail-meta td { color: var(--text); padding: 4px 0; }
+
+.related-section { padding-top: 16px; border-top: 1px solid var(--border); }

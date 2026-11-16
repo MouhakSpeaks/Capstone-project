@@ -1,0 +1,45 @@
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+@media (max-width: 900px) { .checkout-layout { grid-template-columns: 1fr; } }
+
+.checkout-steps {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 28px; font-size: 13px; color: var(--muted);
+}
+.step { padding: 4px 12px; border-radius: 99px; font-weight: 600; border: 1.5px solid var(--border); }
+.step.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.step-sep { color: var(--border); }
+
+.address-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+.address-card {
+  display: flex; align-items: flex-start; gap: 12px; padding: 16px;
+  cursor: pointer; border: 2px solid var(--border); transition: border-color var(--transition);
+}
+.address-card.selected { border-color: var(--brand-light); background: #f0f7ff; }
+.address-card input[type="radio"] { margin-top: 3px; flex-shrink: 0; accent-color: var(--brand); width: 16px; height: 16px; }
+.address-info p { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+.add-addr-btn { margin-bottom: 16px; }
+
+.address-form { padding: 20px; margin-bottom: 20px; }
+.address-form h3 { margin-bottom: 16px; font-size: 16px; font-weight: 700; }
+.addr-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.default-checkbox { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; margin: 8px 0 16px; }
+
+.gift-points-section { padding: 20px; margin-top: 20px; }
+.gift-points-section h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.gift-info { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.gift-input { max-width: 160px; }
+.gift-discount { font-size: 14px; color: var(--success); margin-top: 8px; }
+
+.checkout-summary { padding: 24px; position: sticky; top: 80px; }
+.checkout-summary h3 { font-size: 17px; font-weight: 700; margin-bottom: 16px; }
+.checkout-summary-item { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; color: var(--muted); }
+.checkout-item-title { max-width: 180px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.checkout-summary-total { display: flex; justify-content: space-between; font-size: 18px; font-weight: 800; margin: 12px 0 20px; }
+.checkout-proceed-btn { width: 100%; }
+.text-success { color: var(--success) !important; }
